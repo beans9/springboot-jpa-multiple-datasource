@@ -46,8 +46,8 @@ public class AlphaConfig {
         return em;
     }
  
-    @Primary
     @Bean
+    @Primary
     public DataSource alphaDataSource() {
   
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
@@ -59,8 +59,8 @@ public class AlphaConfig {
         return dataSource;
     }
  
-    @Primary
     @Bean
+    @Primary
     public PlatformTransactionManager alphaTransactionManager() {
   
         JpaTransactionManager transactionManager = new JpaTransactionManager();
